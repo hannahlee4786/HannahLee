@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Cormorant";
+  src: url("/fonts/cormorant.regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("corkboard.png");
+  background-size: cover;
+  background-position: center;
+}
