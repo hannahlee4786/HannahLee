@@ -5,7 +5,7 @@ const styles = {
   },
 
   mainHeader: {
-    width: 800,
+    height: 220,
     marginTop: 40,
     marginBottom: 40,
     // backgroundColor: "aliceblue"
@@ -101,7 +101,7 @@ const styles = {
   heart: {
     position: "absolute" as const,
     top: 30,
-    left: -140,
+    left: 80,
     width: 600,
     transform: "rotate(-14deg)",
   },
@@ -109,7 +109,7 @@ const styles = {
   moreText: {
     position: "absolute" as const,
     top: 210,
-    left: -34,
+    left: 190,
     width: 360,
     transform: "rotate(-14deg)",
     fontFamily: "Cormorant, serif",
@@ -124,8 +124,8 @@ const styles = {
   },
 
   polaroid2: {
-    right: -500,
-    top: 20,
+    right: -1000,
+    top: 36,
     transform: "rotate(-6deg)",
   },
 
@@ -137,16 +137,16 @@ const styles = {
 
   matcha: {
     position: "absolute" as const,
-    top: -68,
-    left: -46,
+    top: -10,
+    left: -340,
     width: 130,
     zIndex: 10,
-    transform: "rotate(8deg)",
+    transform: "rotate(-4deg)",
   },
 
   polaroid4: {
-    right: -500,
-    top: 50,
+    right: -1200,
+    top: 60,
     transform: "rotate(-3deg)",
   },
 
@@ -160,7 +160,8 @@ const styles = {
   paper1Container: {
     position: "relative" as const,
     marginTop: 30,
-    left: -100
+    left: 100,
+    top: 120
   }, 
 
   paper1: {
