@@ -5,9 +5,11 @@ const styles = {
   },
 
   mainHeader: {
-    height: 220,
+    height: 180,
     marginTop: 40,
-    marginBottom: 40,
+    marginBottom: 50,
+    position: "relative" as const,
+    left: -44,
     // backgroundColor: "aliceblue"
   },
 
@@ -29,7 +31,7 @@ const styles = {
   },
 
   polaroid1: {
-    transform: "rotate(-3deg)",
+    transform: "rotate(-12deg)",
   },
   
   ribbon: {
@@ -54,7 +56,7 @@ const styles = {
   },
   
   introPaper: {
-    width: 600,
+    width: 700,
     display: "block",
     filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.15))",
     transform: "rotate(5deg)",
@@ -62,10 +64,10 @@ const styles = {
 
   introText: {
     position: "absolute" as const,
-    fontFamily: "Cormorant, serif",
-    top: 90,
-    left: 70,
-    width: 480,
+    fontFamily: "Special Elite",
+    top: 116,
+    left: 68,
+    width: 570,
     marginTop: 30,
     transform: "rotate(5deg)",
   },
@@ -101,51 +103,51 @@ const styles = {
   heart: {
     position: "absolute" as const,
     top: 30,
-    left: 80,
+    left: -130,
     width: 600,
     transform: "rotate(-14deg)",
   },
   
   moreText: {
     position: "absolute" as const,
-    top: 210,
-    left: 190,
-    width: 360,
+    top: 198,
+    left: -10,
+    width: 340,
     transform: "rotate(-14deg)",
-    fontFamily: "Cormorant, serif",
+    fontFamily: "Special Elite",
     textAlign: 'center' as const,
   },
 
   moreParagraph: {
     margin: 0,
     lineHeight: 1.8,
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     color: "white"
   },
 
   polaroid2: {
-    right: -1000,
+    right: -500,
     top: 36,
-    transform: "rotate(-6deg)",
+    transform: "rotate(10deg)",
   },
 
   polaroid3: {
-    right: -510,
+    right: -540,
     top: 150,
-    transform: "rotate(10deg)",
+    transform: "rotate(-10deg)",
   },
 
   matcha: {
     position: "absolute" as const,
-    top: -10,
-    left: -340,
+    top: -80,
+    left: -140,
     width: 130,
     zIndex: 10,
     transform: "rotate(-4deg)",
   },
 
   polaroid4: {
-    right: -1200,
+    right: -600,
     top: 60,
     transform: "rotate(-3deg)",
   },
@@ -160,8 +162,8 @@ const styles = {
   paper1Container: {
     position: "relative" as const,
     marginTop: 30,
-    left: 100,
-    top: 120
+    left: -100,
+    top: 60
   }, 
 
   paper1: {
@@ -173,7 +175,7 @@ const styles = {
 
   paper1Text: {
     position: "absolute" as const,
-    fontFamily: "Cormorant, serif",
+    fontFamily: "Special Elite",
     top: 98,
     left: 46,
     width: 820,
