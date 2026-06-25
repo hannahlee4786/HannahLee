@@ -1,12 +1,21 @@
-import styles from "../styles/pageStyles";
+import styles from "../styles/experienceStyles";
 
 export default function ExperienceSection() {
   return (
     <div
       style={{
         width: 850,
+        margin: "0 auto",
       }}
     >
+      <div style={{ textAlign: "center" }}>
+        <img
+          src="/images/experience-header.png"
+          alt="Experience bead header"
+          style={styles.experienceHeader}
+        />
+      </div>
+
       {/* Experience */}
       <div style={styles.experienceContainer}>
         <div style={styles.paper1Container}>
@@ -16,11 +25,11 @@ export default function ExperienceSection() {
             style={styles.paper1}
           />
 
-          <img
+          {/* <img
             src="/images/illoominate-stamp.png"
             alt="illoominate stamp"
             style={styles.illoominate}
-          />
+          /> */}
 
           <p style={styles.paper1Text}>
             Last fall, I had the opportunity to work as a Software Engineer Intern at{" "}

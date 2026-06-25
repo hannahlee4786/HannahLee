@@ -1,62 +1,39 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import Navbar, { Page } from "./Navbar";
+
 import AboutSection from "./AboutSection";
 import ExperienceSection from "./ExperienceSection";
 import ProjectsSection from "./ProjectsSection";
+import InvolvementsSection from "./InvolvementsSection";
 import styles from "../styles/corkboard.module.css";
 
-const positions = {
-  about: { x: 0, y: 0 },
-  experience: { x: 0, y: -1200 },
-  projects: { x: 0, y: -2400 },
-};
+export default function Portfolio() {
+  const [page, setPage] = useState<Page>("home");
 
-type Section = keyof typeof positions;
+  return (
+    <div className={styles.viewport}>
+      <div className={styles.board}>
+        <Navbar currentPage={page} onNavigate={setPage} />
 
-export default function Corkboard() {
-  const [current, setCurrent] = useState<Section>("about");
-
-    return (
-      <>
-        <div className={styles.nav}>
-          <button onClick={() => setCurrent("projects")}>
-            Projects
-          </button>
-
-          <button onClick={() => setCurrent("about")}>
-            About
-          </button>
-    
-          <button onClick={() => setCurrent("experience")}>
-            Experience
-          </button>
-        </div>
-    
-        <div className={styles.viewport}>
+        <AnimatePresence mode="wait">
           <motion.div
-            className={styles.board}
-            animate={positions[current]}
-            initial={positions.about}
-            transition={{
-              duration: 1.2,
-              ease: "easeInOut",
-            }}
-          > 
-            <div className={styles.about}>
-              <AboutSection />
-            </div>
-    
-            <div className={styles.experience}>
-              <ExperienceSection />
-            </div>
-
-            <div className={styles.projects}>
-              <ProjectsSection />
-            </div>
+            key={page}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className={styles.pageContent}
+          >
+            {page === "home" && <AboutSection />}
+            {page === "experience" && <ExperienceSection />}
+            {page === "projects" && <ProjectsSection />}
+            {page === "involvements" && <InvolvementsSection />}
           </motion.div>
-        </div>
-      </>
-    );
+        </AnimatePresence>
+      </div>
+    </div>
+  );
 }
