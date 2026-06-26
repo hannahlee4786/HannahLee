@@ -18,7 +18,6 @@ const styles = {
     justifyContent: "center",
     alignItems: "flex-start",
     gap: "20px",
-    // backgroundColor: "pink"
   },
 
   polaroid: {
@@ -125,6 +124,12 @@ const styles = {
     marginLeft: 30,
     marginBottom: 30
   },
+
+  introGroup: {
+    position: "relative" as const,
+    display: "inline-block",
+    transformOrigin: "center center",
+  },
   
   introPaper: {
     width: 700,
@@ -180,12 +185,6 @@ const styles = {
     zIndex: 10,
   },
 
-  heartContainer: {
-    position: "relative" as const,
-    height: 700,
-    // backgroundColor: "white"
-  },
-
   heart: {
     zIndex: 20,
     position: "absolute" as const,
@@ -194,29 +193,41 @@ const styles = {
     width: 430,
   },
 
+  moreContainer: {
+    position: "relative" as const,
+    height: 700,
+    // backgroundColor: "white"
+  },
+
+  moreGroup: {
+    position: "absolute" as const,
+    top: 70,
+    left: 126,
+    width: 400,
+    height: 250,
+  },
+
   purpleTape: {
     position: "absolute" as const,
-    top: 60,
-    left: 260,
+    top: -10,
+    left: 134,
     width: 200,
     zIndex: 10,
   },
 
   morePaper: {
-    position: "absolute" as const,
     width: 400,
-    top: 70,
-    left: 126,
+    display: "block",
     filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.45))",
   },
   
   moreText: {
     position: "absolute" as const,
-    top: 146,
-    left: 220,
+    top: 76,
+    left: 94,
     width: 240,
     fontFamily: "Special Elite",
-    textAlign: 'center' as const,
+    textAlign: "center" as const,
   },
 
   moreParagraph: {
@@ -227,7 +238,6 @@ const styles = {
   },
 
   polaroidsContainer: {
-    // backgroundColor: "pink",
     position: "relative" as const,
     top: -50,
     left: 40
@@ -240,10 +250,11 @@ const styles = {
 
   mango: {
     position: "absolute" as const,
-    bottom: -140,
-    right: 10,
+    bottom: -290,
+    right: -110,
     width: 130,
     transform: "rotate(18deg)",
+    zIndex: 20
   },
 
   polaroid3: {
@@ -253,10 +264,10 @@ const styles = {
 
   matcha: {
     position: "absolute" as const,
-    top: -80,
-    left: -160,
+    top: 298,
+    right: 286,
     width: 130,
-    zIndex: 10,
+    zIndex: 20,
   },
 
   polaroid4: {
@@ -270,30 +281,36 @@ const styles = {
     bottom: -70,
     left: 360,
     zIndex: 10,
-    transform: "rotate(-45deg)",
+    transform: "rotate(-18deg)",
   },
 
   lastContainer: {
     position: "relative" as const,
     height: 400,
-    // backgroundColor: "blue"
+  },
+
+  lastGroup: {
+    position: "absolute" as const,
+    top: 44,
+    right: -120,
+    width: 600,
+    height: 260,
+    cursor: "pointer",
   },
 
   lastPaper: {
     width: 600,
-    position: "absolute" as const,
-    top: 44,
-    right: -120,
+    display: "block",
     filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.45))",
   },
 
   lastText: {
     position: "absolute" as const,
-    top: 140,
-    right: 50,
+    top: 96,
+    right: 170,
     width: 250,
     fontFamily: "Special Elite",
-    textAlign: 'center' as const,
+    textAlign: "center" as const,
   },
 
   lastParagraph: {
@@ -309,29 +326,36 @@ const styles = {
     left: -50
   },
 
-  photoStrip: {
-    width: 140,
+  stripGroup: {
     position: "absolute" as const,
-    top: -60,
-    left: 200
+    top: -124,
+    left: 200,
+    width: 260,
+    height: 220,
+    cursor: "pointer",
   },
 
   orangeClip: {
     position: "absolute" as const,
-    top: -124,
-    left: 212,
+    top: -10,
+    left: 12,
     width: 120,
     zIndex: 10,
   },
 
+  photoStrip: {
+    width: 140,
+    position: "absolute" as const,
+    top: 54,
+  },
+
   bottleCap: {
     position: "absolute" as const,
-    top: 120,
-    left: -60,
+    top: 110,
+    left: -100,
     width: 120,
     zIndex: 10,
-    transform: "rotate(-10deg)",
-  }
+  },
 };
 
 export default styles;
