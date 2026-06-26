@@ -295,7 +295,6 @@ const styles = {
     right: -120,
     width: 600,
     height: 260,
-    cursor: "pointer",
   },
 
   lastPaper: {
