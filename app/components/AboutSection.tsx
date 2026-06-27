@@ -10,11 +10,79 @@ export default function AboutSection() {
       }}
     >
       <div style={{ textAlign: "center" }}>
-        <img
-          src="/images/header.jpg"
-          alt="Hannah Lee magazine letter logo"
-          style={styles.mainHeader}
-        />
+        <div style={styles.mainHeader}>
+          <motion.img
+            src="/images/h1.png"
+            alt="Letter H"
+            style={styles.letterH1}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/a1.png"
+            alt="Letter a"
+            style={styles.letterA1}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/n1.png"
+            alt="Letter n"
+            style={styles.letterN1}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/n2.png"
+            alt="Letter n"
+            style={styles.letterN2}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/a2.png"
+            alt="Letter a"
+            style={styles.letterA2}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/h2.png"
+            alt="Letter h"
+            style={styles.letterH2}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/l1.png"
+            alt="Letter L"
+            style={styles.letterL1}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/e1.png"
+            alt="Letter e"
+            style={styles.letterE1}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+
+          <motion.img
+            src="/images/e2.png"
+            alt="Letter e"
+            style={styles.letterE2}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          />
+        </div>
       </div>
 
       {/* Introduction */}
