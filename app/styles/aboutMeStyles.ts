@@ -266,7 +266,7 @@ const styles = {
   moreGroup: {
     position: "absolute" as const,
     top: 70,
-    left: 126,
+    left: 130,
     width: 400,
     height: 250,
   },
@@ -444,15 +444,18 @@ const styles = {
     zIndex: 30,
   },
 
+  footerContainer: {
+    display: "flex",
+    justifyContent: "center",
+  },
+
   footer: {
-    // backgroundColor: "white",
-    marginTop: 70,
-    fontFamily: "Sophie Comic",
-    textAlign: "center",
-    fontSize: 36,
+    marginTop: 50,
+    fontFamily: "Special Elite",
+    fontSize: 24,
     color: "#1e0a44",
     fontWeight: "bold",
-  }
+  },
 };
 
 export default styles;

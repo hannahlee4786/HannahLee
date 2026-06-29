@@ -418,9 +418,11 @@ export default function AboutSection() {
         </a>
       </div>
 
-      <footer style={styles.footer}>
-        <p>© {new Date().getFullYear()} Hannah Lee</p>
-      </footer>
+      <div style={styles.footerContainer}>
+        <footer style={styles.footer}>
+          <p>© {new Date().getFullYear()} Hannah Lee</p>
+        </footer>
+      </div>
     </div>
   );
 }
