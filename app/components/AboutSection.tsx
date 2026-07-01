@@ -12,7 +12,7 @@ export default function AboutSection() {
       <div style={{ textAlign: "center" }}>
         <div style={styles.mainHeader}>
           <motion.img
-            src="/images/h1.png"
+            src="/images/aboutMe/h1.png"
             alt="Letter H"
             style={styles.letterH1}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -20,7 +20,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/a1.png"
+            src="/images/aboutMe/a1.png"
             alt="Letter a"
             style={styles.letterA1}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -28,7 +28,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/n1.png"
+            src="/images/aboutMe/n1.png"
             alt="Letter n"
             style={styles.letterN1}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -36,7 +36,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/n2.png"
+            src="/images/aboutMe/n2.png"
             alt="Letter n"
             style={styles.letterN2}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -44,7 +44,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/a2.png"
+            src="/images/aboutMe/a2.png"
             alt="Letter a"
             style={styles.letterA2}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -52,7 +52,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/h2.png"
+            src="/images/aboutMe/h2.png"
             alt="Letter h"
             style={styles.letterH2}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -60,7 +60,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/l1.png"
+            src="/images/aboutMe/l1.png"
             alt="Letter L"
             style={styles.letterL1}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -68,7 +68,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/e1.png"
+            src="/images/aboutMe/e1.png"
             alt="Letter e"
             style={styles.letterE1}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -76,7 +76,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/e2.png"
+            src="/images/aboutMe/e2.png"
             alt="Letter e"
             style={styles.letterE2}
             whileHover={{ scale: 1.4, zIndex: 50 }}
@@ -104,13 +104,13 @@ export default function AboutSection() {
           }}
         >
           <img
-            src="/images/pink-ribbon.png"
+            src="/images/aboutMe/pink-ribbon.png"
             alt="Pink ribbon"
             style={styles.ribbon}
           />
 
           <img
-            src="/images/headshot.jpg"
+            src="/images/aboutMe/headshot.jpg"
             alt="Hannah Lee"
             style={styles.picture}
           />
@@ -119,7 +119,7 @@ export default function AboutSection() {
         </motion.div>
 
         <motion.img
-          src="/images/heart.png"
+          src="/images/aboutMe/heart.png"
           alt="Red heart with lace"
           style={styles.heart}
           whileHover={{
@@ -140,7 +140,7 @@ export default function AboutSection() {
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           >
             <img
-              src="/images/beige-paper.png"
+              src="/images/aboutMe/beige-paper.png"
               alt="Background paper for introduction"
               style={styles.introPaper}
             />
@@ -159,14 +159,14 @@ export default function AboutSection() {
             </div>
 
             <img
-              src="/images/pink-tape.png"
+              src="/images/aboutMe/pink-tape.png"
               alt="Pink picnic blanket pattern tape"
               style={styles.pinkTape}
             />
           </motion.div>
 
           <motion.img
-            src="/images/usc-logo.png"
+            src="/images/aboutMe/usc-logo.png"
             alt="USC felt logo"
             style={styles.usc}
             whileHover={{ rotate: -8, scale: 1.08 }}
@@ -174,7 +174,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/blue-flower.png"
+            src="/images/aboutMe/blue-flower.png"
             alt="Blue flower"
             style={styles.flower}
             whileHover={{ rotate: -8, scale: 1.08 }}
@@ -182,7 +182,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/green-star.png"
+            src="/images/aboutMe/green-star.png"
             alt="Green star"
             style={styles.star}
             initial={{ rotate: -14 }}
@@ -191,7 +191,7 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/warriors-wax.png"
+            src="/images/aboutMe/warriors-wax.png"
             alt="Golden state warriors wax stamp"
             style={styles.warriors}
             initial={{ rotate: -14 }}
@@ -204,7 +204,7 @@ export default function AboutSection() {
       {/* Fun Section */}
       <div style={styles.moreContainer}>
         <motion.img
-          src="/images/blue-flower-2.png"
+          src="/images/aboutMe/blue-flower-2.png"
           alt="Blue flower patch with green center"
           style={styles.flower2}
           whileHover={{ rotate: 8, scale: 1.08 }}
@@ -212,7 +212,7 @@ export default function AboutSection() {
         />
 
         <motion.img
-          src="/images/music-receipt.png"
+          src="/images/aboutMe/music-receipt.png"
           alt="Receipt with favorites songs"
           style={styles.receipt}
           whileHover={{ rotate: 6, scale: 1.08 }}
@@ -220,7 +220,7 @@ export default function AboutSection() {
         />
 
         <motion.img
-          src="/images/record.png"
+          src="/images/aboutMe/record.png"
           alt="New Jeans record"
           style={styles.record}
           initial={{ rotate: -45 }}
@@ -241,13 +241,13 @@ export default function AboutSection() {
           transition={{ type: "spring", stiffness: 260, damping: 18 }}
         >
           <img
-            src="/images/binder-paper.png"
+            src="/images/aboutMe/binder-paper.png"
             alt="Binder paper for more info"
             style={styles.morePaper}
           />
 
           <img
-            src="/images/purple-tape.png"
+            src="/images/aboutMe/purple-tape.png"
             alt="Purple tape"
             style={styles.purpleTape}
           />
@@ -269,7 +269,7 @@ export default function AboutSection() {
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           >
             <img
-              src="/images/moma2.jpg"
+              src="/images/aboutMe/moma2.jpg"
               alt="Hannah at SFMOMA"
               style={styles.picture}
             />
@@ -277,7 +277,7 @@ export default function AboutSection() {
           </motion.div>
 
           <motion.img
-            src="/images/mango.png"
+            src="/images/aboutMe/mango.png"
             alt="Mango sticker"
             style={styles.mango}
             whileHover={{ rotate: -10, scale: 1.08 }}
@@ -290,7 +290,7 @@ export default function AboutSection() {
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           >
             <img
-              src="/images/mango-shaved-ice.png"
+              src="/images/aboutMe/mango-shaved-ice.png"
               alt="Mango shaved ice with Jellycats"
               style={styles.picture}
             />
@@ -298,7 +298,7 @@ export default function AboutSection() {
           </motion.div>
 
           <motion.img
-            src="/images/matcha.png"
+            src="/images/aboutMe/matcha.png"
             alt="Matcha latte and rabbit Jellycat"
             style={styles.matcha}
             whileHover={{ rotate: -10, scale: 1.08 }}
@@ -311,7 +311,7 @@ export default function AboutSection() {
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           >
             <img
-              src="/images/baby.jpg"
+              src="/images/aboutMe/baby.jpg"
               alt="Hannah as a baby with her parents at the Golden Gate Bridge"
               style={styles.picture}
             />
@@ -328,7 +328,7 @@ export default function AboutSection() {
           transition={{ type: "spring", stiffness: 260, damping: 18 }}
         >
           <img
-            src="/images/pink-paper.png"
+            src="/images/aboutMe/pink-paper.png"
             alt="Background paper for ending paragraph"
             style={styles.lastPaper}
           />
@@ -346,7 +346,7 @@ export default function AboutSection() {
           transition={{ type: "spring", stiffness: 260, damping: 18 }}
         >
           <img
-            src="/images/fair.jpg"
+            src="/images/aboutMe/fair.jpg"
             alt="Picture at the fair"
             style={styles.picture}
           />
@@ -354,7 +354,7 @@ export default function AboutSection() {
         </motion.div>
 
         <motion.img
-          src="/images/cotton-candy.png"
+          src="/images/aboutMe/cotton-candy.png"
           alt="Cotton candy sticker"
           style={styles.cottonCandy}
           whileHover={{ rotate: 8, scale: 1.08 }}
@@ -367,13 +367,13 @@ export default function AboutSection() {
           transition={{ type: "spring", stiffness: 260, damping: 18 }}
         >
           <img
-            src="/images/orange-clip.png"
+            src="/images/aboutMe/orange-clip.png"
             alt="Orange clip"
             style={styles.orangeClip}
           />
 
           <img
-            src="/images/photo-strip.jpg"
+            src="/images/aboutMe/photo-strip.jpg"
             alt="Photo strip with friend"
             style={styles.photoStrip}
           />
@@ -385,7 +385,7 @@ export default function AboutSection() {
           rel="noopener noreferrer"
         >
           <motion.img
-            src="/images/linkedin.png"
+            src="/images/aboutMe/linkedin.png"
             alt="LinkedIn bottle cap"
             style={styles.linkedin}
             whileHover={{ rotate: -5, scale: 1.4, zIndex: 50, y: -4, cursor: "pointer" }}
@@ -399,7 +399,7 @@ export default function AboutSection() {
           rel="noopener noreferrer"
         >
           <motion.img
-            src="/images/github.png"
+            src="/images/aboutMe/github.png"
             alt="Github bottle cap"
             style={styles.github}
             whileHover={{ rotate: 5, scale: 1.4, zIndex: 50, y: -4, cursor: "pointer" }}
@@ -409,7 +409,7 @@ export default function AboutSection() {
 
         <a href="mailto:hlee4786@usc.edu">
           <motion.img
-            src="/images/gmail.png"
+            src="/images/aboutMe/gmail.png"
             alt="Gmail bottle cap"
             style={styles.gmail}
             whileHover={{ rotate: -5, scale: 1.4, zIndex: 50, y: -4, cursor: "pointer" }}
