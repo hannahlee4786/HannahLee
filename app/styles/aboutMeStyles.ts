@@ -147,11 +147,19 @@ const styles = {
     fontSize: 32
   },
 
+  h36: {
+    position: "absolute" as const,
+    top: 150,
+    left: 40,
+    fontFamily: "Sophie Comic",
+    fontSize: 36
+  },
+
   usc: {
     zIndex: 30,
     position: "absolute" as const,
-    top: -50,
-    left: -30,
+    top: -60,
+    left: -40,
     width: 160,
   },
 
@@ -159,22 +167,59 @@ const styles = {
     zIndex: 30,
     position: "absolute" as const,
     top: 50,
-    left: 590,
+    left: 640,
     width: 160,
   }, 
 
   flower2: {
     zIndex: 30,
     position: "absolute" as const,
-    top: 150,
+    top: 90,
     left: -160,
     width: 160,
   }, 
 
+  oceanGroup: {
+    position: "absolute" as const,
+    top: 520,
+    left: 180,
+    width: 280,
+    transformOrigin: "center center",
+  },
+
+  ocean: {
+    width: 280,
+    backgroundColor: "#F0F0F0",
+    padding: "16px 16px 50px 16px",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.45)",
+    display: "block",
+  },
+
+  sonnyAngels: {
+    position: "absolute" as const,
+    top: 610,
+    left: 850,
+    width: 100
+  },
+
+  sushi: {
+    position: "absolute" as const,
+    top: 610,
+    left: 34,
+    width: 120
+  },
+
+  balloon: {
+    position: "absolute" as const,
+    top: 610,
+    left: 470,
+    width: 120
+  },
+
   receipt: {
     position: "absolute" as const,
     left: -90,
-    top: 240,
+    top: 170,
     height: 480,
     zIndex: 20,
     padding: 8,
@@ -186,7 +231,7 @@ const styles = {
     position: "relative" as const,
     display: "inline-block",
     marginLeft: 30,
-    marginBottom: 30
+    marginBottom: 130
   },
 
   introGroup: {
@@ -196,7 +241,7 @@ const styles = {
   },
   
   introPaper: {
-    width: 700,
+    width: 720,
     display: "block",
     filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.45))",
   },
@@ -205,22 +250,16 @@ const styles = {
     position: "absolute" as const,
     fontFamily: "Special Elite",
     top: 76,
-    left: 76,
-    width: 560,
+    left: 120,
+    width: 510,
     marginTop: 30,
     textAlign: "center" as const,
-  },
-  
-  introHeading: {
-    margin: 0,
-    marginBottom: 16,
-    fontSize: "2rem",
   },
   
   introParagraph: {
     margin: 0,
     lineHeight: 1.8,
-    fontSize: "1.1rem",
+    fontSize: "1.05rem",
   },
   
   star: {
@@ -234,11 +273,11 @@ const styles = {
 
   warriors: {
     position: "absolute" as const,
-    bottom: -115,
-    left: 90,
+    top: 310,
+    left: -70,
     width: 250,
     zIndex: 10,
-    transform: "rotate(-14deg)",
+    transform: "rotate(14deg)",
   },
 
   pinkTape: {
@@ -257,6 +296,45 @@ const styles = {
     width: 430,
   },
 
+  rubiksCube: {
+    position: "absolute" as const,
+    bottom: -280,
+    right: -100,
+    width: 230,
+    // transform: "rotate(18deg)",
+    zIndex: 20
+  },
+
+  continueContainer: {
+    position: "relative" as const,
+    height: 450,
+    // backgroundColor: "white"
+  },
+
+  continuePaper: {
+    position: "absolute" as const,
+    left: -200,
+    top: 80,
+    height: 300,
+    filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.45))",
+  },
+
+  continueText: {
+    position: "absolute" as const,
+    top: 164,
+    left: -120,
+    width: 660,
+    fontFamily: "Special Elite",
+    textAlign: "center" as const,
+  },
+
+  continueParagraph: {
+    margin: 0,
+    lineHeight: 1.8,
+    fontSize: "1.1rem",
+    color: "black"
+  },
+
   moreContainer: {
     position: "relative" as const,
     height: 700,
@@ -265,7 +343,7 @@ const styles = {
 
   moreGroup: {
     position: "absolute" as const,
-    top: 70,
+    top: 10,
     left: 130,
     width: 400,
     height: 250,
@@ -287,17 +365,17 @@ const styles = {
   
   moreText: {
     position: "absolute" as const,
-    top: 76,
-    left: 94,
-    width: 240,
+    top: 56,
+    left: 88,
+    width: 250,
     fontFamily: "Special Elite",
     textAlign: "center" as const,
   },
 
   moreParagraph: {
     margin: 0,
-    lineHeight: 2.35,
-    fontSize: "1.1rem",
+    lineHeight: 2.55,
+    fontSize: "1rem",
     color: "black"
   },
 
@@ -342,8 +420,8 @@ const styles = {
   record: {
     position: "absolute" as const,
     width: 260,
-    bottom: -70,
-    left: 360,
+    bottom: -60,
+    left: 650,
     zIndex: 10,
     transform: "rotate(-18deg)",
   },
@@ -355,7 +433,7 @@ const styles = {
 
   lastGroup: {
     position: "absolute" as const,
-    top: 44,
+    top: -20,
     right: -120,
     width: 600,
     height: 260,
@@ -369,30 +447,30 @@ const styles = {
 
   lastText: {
     position: "absolute" as const,
-    top: 96,
-    right: 170,
-    width: 250,
+    top: 76,
+    right: 160,
+    width: 280,
     fontFamily: "Special Elite",
-    textAlign: "center" as const,
+    textAlign: "right" as const,
   },
 
   lastParagraph: {
     margin: 0,
     lineHeight: 2.15,
-    fontSize: "1.5rem",
+    fontSize: "1.4rem",
     color: "black"
   },
 
   polaroid5: {
     position: "absolute" as const,
-    top: 60,
-    left: -50
+    top: 10,
+    left: -30
   },
 
   stripGroup: {
     position: "absolute" as const,
-    top: -124,
-    left: 200,
+    top: -160,
+    left: 220,
     width: 260,
     height: 220,
   },
@@ -419,26 +497,42 @@ const styles = {
     zIndex: 10,
   },
 
+  baby: {
+    position: "absolute" as const,
+    top: 20,
+    left: 840,
+    width: 120,
+    zIndex: 10
+  },
+
+  resume: {
+    position: "absolute" as const,
+    top: -230,
+    left: 380,
+    width: 250,
+    zIndex: 10,
+  },
+
   linkedin: {
     position: "absolute" as const,
-    bottom: -30,
-    right: 350,
+    bottom: 40,
+    right: 330,
     width: 120,
     zIndex: 30,
   },
 
   github: {
     position: "absolute" as const,
-    bottom: -30,
-    right: 220,
+    bottom: 50,
+    right: 198,
     width: 120,
     zIndex: 30,
   },
 
   gmail: {
     position: "absolute" as const,
-    bottom: -30,
-    right: 90,
+    bottom: 20,
+    right: 70,
     width: 120,
     zIndex: 30,
   },
@@ -449,7 +543,7 @@ const styles = {
   },
 
   footer: {
-    marginTop: 50,
+    marginTop: 10,
     fontFamily: "Special Elite",
     fontSize: 24,
     color: "#1e0a44",
