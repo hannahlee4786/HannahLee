@@ -88,20 +88,9 @@ export default function AboutSection() {
       {/* Introduction */}
       <div style={styles.polaroidContainer}>
         <motion.div
-          style={{
-            ...styles.polaroid,
-            transformOrigin: "center center",
-          }}
-          whileHover={{
-            scale: 1.05,
-            rotate: -4,
-            y: -4,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 18,
-          }}
+          style={{ ...styles.polaroid, transformOrigin: "center center" }}
+          whileHover={{ scale: 1.05, rotate: -4, y: -4 }}
+          transition={{ type: "spring", stiffness: 300, damping: 18 }}
         >
           <img
             src="/images/aboutMe/pink-ribbon.png"
@@ -122,15 +111,8 @@ export default function AboutSection() {
           src="/images/aboutMe/heart.png"
           alt="Red heart with lace"
           style={styles.heart}
-          whileHover={{
-            rotate: -8,
-            scale: 1.08,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 18,
-          }}
+          whileHover={{ rotate: -8, scale: 1.08 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
         />
 
         <div style={styles.introContainer}>
@@ -146,15 +128,8 @@ export default function AboutSection() {
             />
 
             <div style={styles.introText}>
-              <h2 style={styles.introHeading}>About Me</h2>
               <p style={styles.introParagraph}>
-                Hi, I'm Hannah Lee, a current undergraduate at the University of
-                Southern California studying Computer Science and minoring in Psychology!
-                Since elementary school, I've always found myself drawn to math and the
-                way numbers logically piece together with a single solution. Naturally,
-                I picked up Computer Science in my junior year of high school after
-                taking AP Computer Science A, and I decided to pursue a career in the
-                field of software engineering.
+                Hi! I'm Hannah Lee, an undergraduate at the University of Southern California studying Computer Science with a minor in Psychology. Ever since I was young, I've loved solving problems whether through math or spending hours figuring out Rubik's Cubes. That curiosity eventually led me to computer science in junior year of high school, where experiences like AP Computer Science A and Columbia University's Pre-College Program introduced me to the world of coding. Since then, I've continued exploring software development through coursework, projects, and experience. 
               </p>
             </div>
 
@@ -164,6 +139,36 @@ export default function AboutSection() {
               style={styles.pinkTape}
             />
           </motion.div>
+
+          <motion.div
+            style={styles.oceanGroup}
+            whileHover={{ scale: 1.05, rotate: -4, y: -4 }}
+            transition={{ type: "spring", stiffness: 300, damping: 18 }}
+          >
+            <img
+              src="/images/aboutMe/ocean.JPG"
+              alt="Hannah with the ocean view"
+              style={styles.ocean}
+            />
+
+            <h3 style={styles.h36}>@rockaway beach</h3>
+          </motion.div>
+
+          <motion.img
+            src="/images/aboutMe/sushi.png"
+            alt="Bowl of sushi"
+            style={styles.sushi}
+            whileHover={{ rotate: 4, scale: 1.08 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+          />
+
+          <motion.img
+            src="/images/aboutMe/balloon.png"
+            alt="Flower balloon"
+            style={styles.balloon}
+            whileHover={{ rotate: -4, scale: 1.08 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+          />
 
           <motion.img
             src="/images/aboutMe/usc-logo.png"
@@ -191,14 +196,60 @@ export default function AboutSection() {
           />
 
           <motion.img
-            src="/images/aboutMe/warriors-wax.png"
-            alt="Golden state warriors wax stamp"
-            style={styles.warriors}
-            initial={{ rotate: -14 }}
-            whileHover={{ rotate: 8, scale: 1.08 }}
+            src="/images/aboutMe/rubiks-cube.png"
+            alt="Rubik's Cube stamp"
+            style={styles.rubiksCube}
+            // initial={{rotate: 18}}
+            whileHover={{ rotate: -10, scale: 1.08 }}
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           />
         </div>
+      </div>
+
+      {/* Continue */}
+      <div style={styles.continueContainer}>
+        <motion.div
+          style={styles.moreGroup}
+          whileHover={{ rotate: -4, scale: 1.03, y: -2 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        >
+          <img
+            src="/images/aboutMe/continue-paper.png"
+            alt="Binder paper for more info"
+            style={styles.continuePaper}
+          />
+
+          <div style={styles.continueText}>
+            <p style={styles.continueParagraph}>
+              Alongside Computer Science, I chose to minor in Psychology because I want to better understand how people think, behave, and interact with the world around them. I believe that understanding the human experience is essential to creating technology that is intuitive, meaningful, and genuinely improves people's lives.
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.img
+          src="/images/aboutMe/warriors-wax.png"
+          alt="Golden state warriors wax stamp"
+          style={styles.warriors}
+          initial={{ rotate: 14 }}
+          whileHover={{ rotate: 8, scale: 1.08 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        />
+
+        <motion.img
+          src="/images/aboutMe/record.png"
+          alt="New Jeans record"
+          style={styles.record}
+          initial={{ rotate: -45 }}
+          whileHover={{
+            rotate: -35,
+            scale: 1.08,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 18,
+          }}
+        />
       </div>
 
       {/* Fun Section */}
@@ -217,22 +268,6 @@ export default function AboutSection() {
           style={styles.receipt}
           whileHover={{ rotate: 6, scale: 1.08 }}
           transition={{ type: "spring", stiffness: 260, damping: 18 }}
-        />
-
-        <motion.img
-          src="/images/aboutMe/record.png"
-          alt="New Jeans record"
-          style={styles.record}
-          initial={{ rotate: -45 }}
-          whileHover={{
-            rotate: -35,
-            scale: 1.08,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 18,
-          }}
         />
 
         <motion.div
@@ -254,10 +289,7 @@ export default function AboutSection() {
 
           <div style={styles.moreText}>
             <p style={styles.moreParagraph}>
-              Outside of academics and tech, as a Bay area native, I've grown to love
-              exploring new cafes and matcha places. I also love visiting art
-              museums such as SF MOMA and Legion of Honor since I grew up learning
-              art from my mom.
+              Outside of academics and tech, I'm a Bay Area native who enjoys discovering new cafés and visiting art museums like SFMOMA and the Legion of Honor. My mom introduced me to art from a young age, and that appreciation for creativity and design has stayed with me ever since.
             </p>
           </div>
         </motion.div>
@@ -280,7 +312,16 @@ export default function AboutSection() {
             src="/images/aboutMe/mango.png"
             alt="Mango sticker"
             style={styles.mango}
+            initial={{rotate: 18}}
             whileHover={{ rotate: -10, scale: 1.08 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+          />
+
+          <motion.img
+            src="/images/aboutMe/sonny-angels.png"
+            alt="2 Sonny Angels"
+            style={styles.sonnyAngels}
+            whileHover={{ rotate: 4, scale: 1.08 }}
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           />
 
@@ -335,7 +376,7 @@ export default function AboutSection() {
 
           <div style={styles.lastText}>
             <p style={styles.lastParagraph}>
-              {"Feel free to connect with me below :)"}
+              {"Thanks for stopping by! Feel free to connect with me below :)"}
             </p>
           </div>
         </motion.div>
@@ -378,6 +419,22 @@ export default function AboutSection() {
             style={styles.photoStrip}
           />
         </motion.div>
+
+        <motion.img
+          src="/images/aboutMe/baby2.png"
+          alt="Hannah as a baby"
+          style={styles.baby}
+          whileHover={{ rotate: 4, scale: 1.08 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        />
+
+        <motion.img
+          src="/images/aboutMe/resume.png"
+          alt="I love resume stamp"
+          style={styles.resume}
+          whileHover={{ rotate: 8, scale: 1.08, cursor: "pointer" }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        />
 
         <a
           href="https://www.linkedin.com/in/hannah-lee1107"
